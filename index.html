@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+        content="Country Side Beach — a Vanuatu-based business offering locally made products and goods, plus a physical space for meetings, conferences, workshops and events.">
+  <title>Country Side Beach — Locally Made · Locally Gathered</title>
+  <link rel="icon" href="images/favicon.png" sizes="48x48">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Flatpickr CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/light.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ── SVG icon sprite (inline icons, no external icon dependency) ────────── -->
+  <svg aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
+    <symbol id="icon-location" viewBox="0 0 24 24">
+      <circle cx="12" cy="7.5" r="3" fill="currentColor"/>
+      <rect x="10.5" y="10.5" width="3" height="8.5" rx="1.5" fill="currentColor"/>
+      <polygon points="7,19 17,19 12,22.5" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24">
+      <rect x="4" y="7" width="16" height="12" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/>
+      <polygon points="12,7 4,9 20,9" fill="currentColor" opacity="0.78"/>
+    </symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24">
+      <rect x="7" y="4" width="10" height="16" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/>
+      <rect x="9" y="7" width="6" height="12" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+      <circle cx="12" cy="5" r="1.3" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-people" viewBox="0 0 24 24">
+      <circle cx="9" cy="8" r="2.6" fill="currentColor"/>
+      <rect x="7" y="10.6" width="4" height="6" rx="2" fill="currentColor" opacity="0.68"/>
+      <circle cx="17" cy="8" r="2.6" fill="currentColor"/>
+      <rect x="15" y="10.6" width="4" height="6" rx="2" fill="currentColor" opacity="0.68"/>
+    </symbol>
+  </svg>
+
+  <!-- ══════════════════════════════════════════════════════════════════════════
+       HEADER & NAVIGATION
+  ══════════════════════════════════════════════════════════════════════════ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#hero" class="logo-link" aria-label="Country Side Beach home">
+        <img src="images/logo.png" width="48" height="48" alt="" class="logo-icon" aria-hidden="true">
+        <span class="logo-text">Country Side Beach</span>
+      </a>
+
+      <button type="button" class="menu-toggle" aria-controls="primary-nav"
+              aria-expanded="false" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav id="primary-nav" class="nav" role="navigation" aria-label="Main">
+        <a href="#hero" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#products" class="nav-link">Products</a>
+        <a href="#space" class="nav-link">Space</a>
+        <a href="#events" class="nav-link">Events</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#admin" class="nav-link admin-open">Admin</a>
+        <a href="#space" class="nav-cta btn btn-call">Book a Visit</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ════════════════════════════════════════════════════════════════════════
+         HERO (with slideshow background)
+    ══════════════════════════════════════════════════════════════════════════ -->
+    <section id="hero" class="hero">
+      <!-- Slideshow serving as the hero background -->
+      <div class="hero-slideshow slideshow" data-reveal>
+        <div class="slideshow-viewport" role="region" aria-roledescription="carousel" aria-label="Country Side Beach gallery">
+          <div class="slideshow-track" style="transform: translateX(0)">
+            <figure class="slide" role="group" aria-roledescription="slide" aria-label="Slide 1 of 5">
+              <img src="images/gallery-1.jpg" alt="Community gathering at Country Side Beach" loading="lazy" width="1600" height="900">
+            </figure>
+            <figure class="slide" role="group" aria-roledescription="slide" aria-label="Slide 2 of 5">
+              <img src="images/gallery-2.jpg" alt="Local products and crafts on display" loading="lazy" width="1600" height="900">
+            </figure>
+            <figure class="slide" role="group" aria-roledescription="slide" aria-label="Slide 3 of 5">
+              <img src="images/gallery-3.jpg" alt="Visitors enjoying the beachfront venue" loading="lazy" width="1600" height="900">
+            </figure>
+            <figure class="slide" role="group" aria-roledescription="slide" aria-label="Slide 4 of 5">
+              <img src="images/gallery-4.jpg" alt="Local artisans crafting on site" loading="lazy" width="1600" height="900">
+            </figure>
+            <figure class="slide" role="group" aria-roledescription="slide" aria-label="Slide 5 of 5">
+              <img src="images/gallery-9.webp" alt="Community evening event with lights" loading="lazy" width="1600" height="900">
+            </figure>
+          </div>
+        </div>
+
+        <button type="button" class="slideshow-nav slideshow-nav--prev" aria-label="Previous slide">
+          <span class="nav-arrow" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="slideshow-nav slideshow-nav--next" aria-label="Next slide">
+          <span class="nav-arrow" aria-hidden="true"></span>
+        </button>
+
+        <button type="button" class="slideshow-pause" aria-label="Pause slideshow" aria-pressed="false">
+          <span class="pause-icon"></span><span class="pause-icon"></span>
+        </button>
+
+        <div class="slideshow-dots" role="tablist" aria-label="Slides navigation"></div>
+      </div>
+
+      <!-- Dark overlay so hero text stays readable -->
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="hero-fronds" aria-hidden="true">
+        <svg viewBox="0 0 1200 110" preserveAspectRatio="none"
+             xmlns="http://www.w3.org/2000/svg" focusable="false">
+          <ellipse cx="200" cy="70" rx="90" ry="34" transform="rotate(-12 200 70)" fill="#ffffff" opacity="0.05"/>
+          <ellipse cx="600" cy="52" rx="140" ry="42" transform="rotate(6 600 52)" fill="#ffffff" opacity="0.04"/>
+          <ellipse cx="980" cy="70" rx="80" ry="30" transform="rotate(-8 980 70)" fill="#ffffff" opacity="0.05"/>
+        </svg>
+      </div>
+
+      <div class="container hero-content" data-reveal>
+        <div class="hero-identity">
+          <img src="images/logo.png" width="64" height="64" alt="Country Side Beach logo" class="hero-logo" aria-hidden="true">
+        </div>
+        <h1 class="hero-title">Locally made products.<br><span>A place to gather.</span></h1>
+        <p class="hero-text">
+          Country Side Beach pairs locally crafted goods — from handwoven baskets and
+          island-grown kava to hand-carved woodwork — with a welcoming venue for
+          meetings, workshops, markets and community events across Vanuatu.
+        </p>
+        <div class="hero-cta">
+          <a href="#products" class="btn btn-ghost">Explore Our Products</a>
+          <button type="button" class="btn btn-call js-open-booking">Book Our Space</button>
+        </div>
+        <p class="hero-note">
+          <small>Local makers — get in touch to showcase your work.</small>
+        </p>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════════════
+         ABOUT
+    ═════════════════════════════════════════════════════════════════════════ -->
+    <section id="about" class="about section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text" data-reveal>
+            <div class="section-head">
+              <span class="section-tag">Our Story</span>
+              <h2>About Country Side Beach</h2>
+            </div>
+            <p>
+              Country Side Beach is a Vanuatu-based business rooted in the craftsmanship
+              and communities of our islands. We believe great things happen when local
+              makers are supported and when people — businesses and organisations alike —
+              can come together in a shared, welcoming place.
+            </p>
+            <ul class="about-list">
+              <li>Produces and provides locally made products and goods</li>
+              <li>Supports local Ni-Vanuatu makers, growers and the wider community</li>
+              <li>Provides a physical space for meetings, conferences, workshops and events</li>
+              <li>A place where people, businesses and organisations can come together</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary" style="margin-top:1.5rem">Get in Touch</a>
+          </div>
+          <div class="about-image" data-reveal aria-hidden="true">
+            <img src="images/about-team.jpg" alt="Country Side Beach team and community" loading="lazy" width="787" height="997">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════════════════════
+         PRODUCTS
+    ═════════════════════════════════════════════════════════════════════════ -->
+    <section id="products" class="products section">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="section-tag">Our Products</span>
+          <h2>Locally Made Goods</h2>
+          <p class="section-subtitle">
+            Handcrafted and produced locally across Vanuatu. Stocked items update
+            in real time from our workshop to this page.
+          </p>
+        </div>
+
+        <div class="products-controls">
+          <div class="filter-group" role="group" aria-label="Filter products">
+            <button type="button" class="filter-btn active" data-filter="all">All Products</button>
+            <button type="button" class="filter-btn" data-filter="craft">Crafts</button>
+            <button type="button" class="filter-btn" data-filter="food">Food & Beverage</button>
+          </div>
+        </div>
+
+        <!-- Populated by js/script.js (products render here from the data layer) -->
+        <div class="product-grid" id="product-grid" aria-live="polite" aria-busy="false">
+          <div class="product-skeleton" data-reveal><div class="product-image-wrap"></div><div class="product-body"><div class="skeleton-line"></div><div class="skeleton-line short"></div><div class="skeleton-line"></div></div></div>
+          <div class="product-skeleton" data-reveal><div class="product-image-wrap"></div><div class="product-body"><div class="skeleton-line"></div><div class="skeleton-line short"></div><div class="skeleton-line"></div></div></div>
+          <div class="product-skeleton" data-reveal><div class="product-image-wrap"></div><div class="product-body"><div class="skeleton-line"></div><div class="skeleton-line short"></div><div class="skeleton-line"></div></div></div>
+        </div>
+        <p class="products-empty muted" style="display:none">No products match your filter.</p>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════════════════════
+         CONFERENCE & MEETING SPACE
+    ═════════════════════════════════════════════════════════════════════════ -->
+    <section id="space" class="space section">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="section-tag">Booking</span>
+          <h2>Conference &amp; Event Spaces</h2>
+          <p class="section-subtitle">
+            Flexible, high-quality venues for professional and community gatherings.
+          </p>
+        </div>
+
+        <div class="space-grid">
+          <div class="space-image" data-reveal aria-hidden="true">
+            <img src="images/space.webp" alt="Modern conference room" loading="lazy" width="1020" height="1020">
+          </div>
+          <div class="space-content" data-reveal>
+            <p>
+              Our purpose-built spaces cater to groups from 10 to 60. Whether it's a corporate strategy session or a community market, we provide the environment and tools you need to succeed.
+            </p>
+
+            <div class="booking-tabs" role="tablist">
+              <button type="button" class="booking-tab active" data-tab="meeting">Meeting Rooms</button>
+              <button type="button" class="booking-tab" data-tab="conference">Conference Hall</button>
+              <button type="button" class="booking-tab" data-tab="outdoor">Event Grounds</button>
+            </div>
+
+            <div class="booking-panes">
+              <div class="booking-pane active" id="pane-meeting">
+                <ul class="space-features">
+                  <li><span class="feat-title">Capacity</span> <span class="feat-desc">Up to 15 people.</span></li>
+                  <li><span class="feat-title">Ideal for</span> <span class="feat-desc">Board meetings, interviews, small team workshops.</span></li>
+                  <li><span class="feat-title">Equipment</span> <span class="feat-desc">65" Screen, High-speed Wifi, Whiteboards.</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="space-actions">
+              <button type="button" class="btn btn-call js-open-booking">Book This Space</button>
+              <a href="#contact" class="btn btn-outline">Enquire for Custom Events</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════════════════════
+         EVENT CALENDAR
+    ═════════════════════════════════════════════════════════════════════════ -->
+    <section id="events" class="events section">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="section-tag">Calendar</span>
+          <h2>Upcoming Events &amp; Workshops</h2>
+          <p class="section-subtitle">
+            Stay connected with our community. View public events or check dates for your own booking.
+          </p>
+        </div>
+
+        <div class="calendar-layout">
+          <div class="calendar-sidebar" data-reveal>
+            <div class="mini-calendar" id="mini-calendar">
+              <!-- JS will populate this -->
+            </div>
+            <div class="calendar-legend">
+              <div class="legend-item"><span class="dot public"></span> Public Event</div>
+              <div class="legend-item"><span class="dot private"></span> Private Booking</div>
+              <div class="legend-item"><span class="dot available"></span> Available</div>
+            </div>
+          </div>
+
+          <div class="calendar-main" data-reveal>
+            <div class="event-grid" id="event-grid" aria-live="polite">
+              <!-- Populated by script.js -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════════════════════
+         CONTACT
+    ═════════════════════════════════════════════════════════════════════════ -->
+    <section id="contact" class="contact section">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="section-tag">Get in Touch</span>
+          <h2>Contact</h2>
+          <p class="section-subtitle">
+            Reach out to book a visit, enquire about products, or talk shop as a
+            local maker. We will be in touch soon.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact details — placeholders to be replaced via the admin backend -->
+          <ul class="contact-details">
+            <li class="contact-item">
+              <span class="icon" aria-hidden="true"><svg width="24" height="24"><use href="#icon-location"></use></svg></span>
+              <div>
+                <h4>Location</h4>
+                <p><em class="muted">Details to be added</em></p>
+              </div>
+            </li>
+            <li class="contact-item">
+              <span class="icon" aria-hidden="true"><svg width="24" height="24"><use href="#icon-phone"></use></svg></span>
+              <div>
+                <h4>Phone</h4>
+                <p><em class="muted">Details to be added</em></p>
+              </div>
+            </li>
+            <li class="contact-item">
+              <span class="icon" aria-hidden="true"><svg width="24" height="24"><use href="#icon-mail"></use></svg></span>
+              <div>
+                <h4>Email</h4>
+                <p><em class="muted">Details to be added</em></p>
+              </div>
+            </li>
+            <li class="contact-item">
+              <span class="icon" aria-hidden="true"><svg width="24" height="24"><use href="#icon-people"></use></svg></span>
+              <div>
+                <h4>Social</h4>
+                <ul class="social-list">
+                  <li><a href="#" aria-label="Facebook" class="social-link"><svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#0018a8"/><text x="12" y="16.2" font-family="sans-serif" font-weight="700" font-size="12" fill="#fff" text-anchor="middle">f</text></svg></a></li>
+                  <li><a href="#" aria-label="Instagram" class="social-link"><svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#0018a8"/><rect x="8.5" y="8.2" width="7" height="5.6" rx="1.3" fill="none" stroke="#fff" stroke-width="1.3"/><circle cx="12" cy="10.8" r="1.7" fill="#fff"/></svg></a></li>
+                  <li><a href="#" aria-label="LinkedIn" class="social-link"><svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#0018a8"/><text x="12" y="16.2" font-family="sans-serif" font-weight="700" font-size="10" fill="#fff" text-anchor="middle">in</text></svg></a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Contact form (submit is stubbed until a backend is wired up) -->
+          <form class="contact-form" data-reveal id="contact-form">
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="cf-name">Name</label>
+                <input type="text" id="cf-name" name="name" placeholder="Your name" required>
+              </div>
+              <div class="form-field">
+                <label for="cf-email">Email</label>
+                <input type="email" id="cf-email" name="email" placeholder="you@email.com" required>
+              </div>
+              <div class="form-field">
+                <label for="cf-message">Message</label>
+                <textarea id="cf-message" name="message" placeholder="How can we help?" rows="5" required></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary" style="margin-top:1.5rem">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="container" style="padding:3.5rem 0 2rem">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/logo-white.png" width="48" height="48" alt="" class="logo-icon-white" aria-hidden="true">
+          <span class="logo-text logo-text--light">Country Side Beach</span>
+          <p class="muted">Locally made products. A place to gather.</p>
+        </div>
+        <div>
+          <p class="footer-nav-title">Quick Links</p>
+          <nav class="footer-nav" aria-label="Footer">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#products">Products</a>
+            <a href="#space">Space</a>
+            <a href="#events">Events</a>
+            <a href="#contact">Contact</a>
+            <a href="#admin" class="admin-open">Admin</a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer-nav-title">Connect</p>
+          <ul class="social-list social-list--footer">
+            <li><a href="#" aria-label="Facebook" class="social-link"><svg width="22" height="22" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#ffffff"/><text x="12" y="15.8" font-family="sans-serif" font-weight="700" font-size="11" fill="#0018a8" text-anchor="middle">f</text></svg></a></li>
+            <li><a href="#" aria-label="Instagram" class="social-link"><svg width="22" height="22" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#ffffff"/><rect x="8.7" y="8.4" width="6.6" height="5.2" rx="1.2" fill="none" stroke="#0018a8" stroke-width="1.2"/><circle cx="12" cy="10.8" r="1.5" fill="#0018a8"/></svg></a></li>
+            <li><a href="#" aria-label="LinkedIn" class="social-link"><svg width="22" height="22" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#ffffff"/><text x="12" y="15.8" font-family="sans-serif" font-weight="700" font-size="10" fill="#0018a8" text-anchor="middle">in</text></svg></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright">
+        &copy; 2026 Country Side Beach
+      </div>
+    </div>
+  </footer>
+
+  <section id="admin" class="admin-panel" aria-hidden="true" hidden>
+    <div class="admin-backdrop" data-admin-close></div>
+    <div class="admin-shell" role="dialog" aria-modal="true" aria-labelledby="admin-title">
+      <button type="button" class="admin-close" data-admin-close aria-label="Close admin">&times;</button>
+
+      <div id="admin-login" class="admin-login">
+        <img src="images/logo.png" width="64" height="64" alt="Country Side Beach logo">
+        <h2 id="admin-title">Admin sign in</h2>
+        <p>Sign in to update the public website.</p>
+        <form id="admin-login-form">
+          <label class="admin-field" for="admin-password-input">Password</label>
+          <input id="admin-password-input" class="admin-input" type="password" autocomplete="current-password" required>
+          <button type="submit" class="admin-save">Sign in</button>
+          <p id="admin-login-error" class="admin-error" hidden></p>
+        </form>
+      </div>
+
+      <div id="admin-dashboard" class="admin-dashboard" hidden>
+        <header class="admin-header">
+          <div class="admin-brand">
+            <img src="images/logo.png" width="40" height="40" alt="">
+            <div>
+              <strong>Admin dashboard</strong>
+              <span>Update the public website</span>
+            </div>
+          </div>
+          <div class="admin-header-actions">
+            <button type="button" id="admin-save" class="admin-save">Save changes</button>
+            <button type="button" id="admin-logout" class="admin-logout">Sign out</button>
+          </div>
+        </header>
+
+        <p class="admin-note">Changes are stored in this browser. Use Export before moving to another device.</p>
+
+        <nav class="admin-tabs" aria-label="Admin sections">
+          <button type="button" class="admin-tab is-active" data-admin-tab="hero">Hero</button>
+          <button type="button" class="admin-tab" data-admin-tab="about">About</button>
+          <button type="button" class="admin-tab" data-admin-tab="products">Products</button>
+          <button type="button" class="admin-tab" data-admin-tab="space">Space</button>
+          <button type="button" class="admin-tab" data-admin-tab="events">Events</button>
+          <button type="button" class="admin-tab" data-admin-tab="contact">Contact</button>
+          <button type="button" class="admin-tab" data-admin-tab="settings">Settings</button>
+        </nav>
+
+        <main class="admin-panels">
+          <section class="admin-panel-section is-active" data-admin-panel="hero">
+            <div class="admin-section-head">
+              <h2>Hero</h2>
+              <p>Edit the title, description and buttons shown on the home page.</p>
+            </div>
+            <div class="admin-form-grid">
+              <label class="admin-field">First title line<input id="admin-hero-title1" class="admin-input" type="text"></label>
+              <label class="admin-field">Second title line<input id="admin-hero-title2" class="admin-input" type="text"></label>
+              <label class="admin-field admin-field-wide">Description<textarea id="admin-hero-text" class="admin-input" rows="4"></textarea></label>
+              <label class="admin-field">Primary button<input id="admin-hero-cta1" class="admin-input" type="text"></label>
+              <label class="admin-field">Secondary button<input id="admin-hero-cta2" class="admin-input" type="text"></label>
+              <label class="admin-field admin-field-wide">Small note<input id="admin-hero-note" class="admin-input" type="text"></label>
+            </div>
+          </section>
+
+          <section class="admin-panel-section" data-admin-panel="about">
+            <div class="admin-section-head">
+              <h2>About</h2>
+              <p>Edit the story, check-list points and team image.</p>
+            </div>
+            <div class="admin-form-grid">
+              <label class="admin-field admin-field-wide">Main paragraph<textarea id="admin-about-text" class="admin-input" rows="5"></textarea></label>
+              <label class="admin-field admin-field-wide">
+                Image
+                <input id="admin-about-image" class="admin-input" type="text" placeholder="Path or upload">
+                <input type="file" accept="image/*" class="admin-upload" data-target="admin-about-image" style="margin-top:0.5rem;">
+              </label>
+            </div>
+            <div id="admin-about-points" class="admin-item-list"></div>
+            <button type="button" id="admin-add-about-point" class="admin-secondary">+ Add point</button>
+          </section>
+
+          <section class="admin-panel-section" data-admin-panel="products">
+            <div class="admin-section-head">
+              <h2>Products</h2>
+              <p>Add, edit or remove products shown on the public site.</p>
+            </div>
+            <div id="admin-products" class="admin-item-list"></div>
+            <button type="button" id="admin-add-product" class="admin-secondary">+ Add product</button>
+          </section>
+
+          <section class="admin-panel-section" data-admin-panel="space">
+            <div class="admin-section-head">
+              <h2>Space</h2>
+              <p>Edit the venue description, image and feature list.</p>
+            </div>
+            <div class="admin-form-grid">
+              <label class="admin-field admin-field-wide">Description<textarea id="admin-space-text" class="admin-input" rows="4"></textarea></label>
+              <label class="admin-field admin-field-wide">
+                Image
+                <input id="admin-space-image" class="admin-input" type="text" placeholder="Path or upload">
+                <input type="file" accept="image/*" class="admin-upload" data-target="admin-space-image" style="margin-top:0.5rem;">
+              </label>
+            </div>
+            <div id="admin-space-features" class="admin-item-list"></div>
+            <button type="button" id="admin-add-space-feature" class="admin-secondary">+ Add feature</button>
+          </section>
+
+          <section class="admin-panel-section" data-admin-panel="events">
+            <div class="admin-section-head">
+              <h2>Events</h2>
+              <p>Add, edit or remove upcoming events.</p>
+            </div>
+            <div id="admin-events" class="admin-item-list"></div>
+            <button type="button" id="admin-add-event" class="admin-secondary">+ Add event</button>
+          </section>
+
+          <section class="admin-panel-section" data-admin-panel="contact">
+            <div class="admin-section-head">
+              <h2>Contact</h2>
+              <p>Edit the contact details and social links.</p>
+            </div>
+            <div class="admin-form-grid">
+              <label class="admin-field">Location<input id="admin-contact-location" class="admin-input" type="text"></label>
+              <label class="admin-field">Phone<input id="admin-contact-phone" class="admin-input" type="text"></label>
+              <label class="admin-field">Email<input id="admin-contact-email" class="admin-input" type="text"></label>
+              <label class="admin-field">Facebook URL<input id="admin-contact-facebook" class="admin-input" type="text"></label>
+              <label class="admin-field">Instagram URL<input id="admin-contact-instagram" class="admin-input" type="text"></label>
+              <label class="admin-field">LinkedIn URL<input id="admin-contact-linkedin" class="admin-input" type="text"></label>
+            </div>
+          </section>
+
+          <section class="admin-panel-section" data-admin-panel="settings">
+            <div class="admin-section-head">
+              <h2>Settings</h2>
+              <p>Change the sign-in password and move site data between browsers.</p>
+            </div>
+            <div class="admin-form-grid">
+              <label class="admin-field">New admin password<input id="admin-new-password" class="admin-input" type="password" minlength="6"></label>
+            </div>
+            <button type="button" id="admin-change-password" class="admin-secondary">Change password</button>
+            <hr class="admin-divider">
+            <div class="admin-actions-row">
+              <button type="button" id="admin-export" class="admin-secondary">Download site data</button>
+              <label class="admin-file">Import site data<input id="admin-import" class="admin-input" type="file" accept="application/json"></label>
+            </div>
+            <p id="admin-settings-status" class="admin-status" aria-live="polite"></p>
+          </section>
+        </main>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Booking Modal (Flatpickr Calendar) ──────────────────────────────────────── -->
+  <div id="booking-modal" class="modal" aria-hidden="true" hidden>
+    <div class="modal-backdrop" data-modal-close></div>
+    <div class="modal-content booking-modal-content" role="dialog" aria-modal="true" aria-labelledby="booking-modal-title">
+      <button type="button" class="modal-close" data-modal-close aria-label="Close modal">&times;</button>
+      <div class="modal-body">
+        <h2 id="booking-modal-title">Book a Space</h2>
+        <p class="muted">Select an available date, choose your space, and fill in your details.</p>
+        
+        <form id="booking-form" class="booking-form" novalidate>
+          <div class="booking-step" data-step="1">
+            <h3>1. Select Date & Space</h3>
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="bk-space">Space Type</label>
+                <select id="bk-space" name="space" required>
+                  <option value="meeting">Meeting Room (10–15 people)</option>
+                  <option value="conference">Conference Hall (15–60 people)</option>
+                  <option value="outdoor">Outdoor Event Grounds (up to 150)</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="bk-date">Event Date</label>
+                <input type="text" id="bk-date" name="date" placeholder="Pick a date" required readonly>
+                <input type="hidden" name="date_iso" id="bk-date-iso">
+              </div>
+            </div>
+            <div id="calendar-wrap" class="calendar-wrap" aria-live="polite"></div>
+            <button type="button" class="btn btn-primary btn-next-step" data-next="2" disabled>Continue</button>
+          </div>
+
+          <div class="booking-step" data-step="2" hidden>
+            <h3>2. Your Details</h3>
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="bk-name">Full Name <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="bk-name" name="name" placeholder="John Doe" required autocomplete="name">
+              </div>
+              <div class="form-field">
+                <label for="bk-email">Email <span class="required" aria-hidden="true">*</span></label>
+                <input type="email" id="bk-email" name="email" placeholder="you@example.com" required autocomplete="email">
+              </div>
+              <div class="form-field">
+                <label for="bk-phone">Phone <span class="required" aria-hidden="true">*</span></label>
+                <input type="tel" id="bk-phone" name="phone" placeholder="+678 123 4567" required autocomplete="tel">
+              </div>
+            </div>
+            <div class="form-field admin-field-wide">
+              <label for="bk-notes">Event Details <span class="required" aria-hidden="true">*</span></label>
+              <textarea id="bk-notes" name="notes" rows="4" placeholder="Describe your event: type, expected guests, setup needs, catering..." required></textarea>
+            </div>
+            <div class="form-actions">
+              <button type="button" class="btn btn-outline btn-prev-step" data-prev="1">Back</button>
+              <button type="submit" class="btn btn-primary" id="booking-submit">Confirm Booking</button>
+            </div>
+          </div>
+        </form>
+
+        <div id="booking-success" class="booking-success" hidden>
+          <svg class="success-icon" viewBox="0 0 24 24" width="64" height="64" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#10b981"/><path d="M8 12l2 2 4-4" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Booking Submitted!</h3>
+          <p>We've received your request for <strong id="success-date"></strong> at the <strong id="success-space"></strong>.</p>
+          <p class="muted">A confirmation email has been sent to <strong id="success-email"></strong>. Our team will contact you within 24 hours to finalize details.</p>
+          <button type="button" class="btn btn-primary" id="booking-done">Done</button>
+        </div>
+
+        <div id="booking-error" class="booking-error" hidden>
+          <svg class="error-icon" viewBox="0 0 24 24" width="64" height="64" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#ef4444"/><path d="M12 8v4M12 16h.01" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+          <h3>Booking Failed</h3>
+          <p id="error-message">Something went wrong. Please try again.</p>
+          <button type="button" class="btn btn-outline" id="booking-retry">Try Again</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Notice (transient) ──────────────────────────────────────────────────── -->
+  <div id="notice" class="notice" role="alert" aria-live="polite"></div>
+
+  <!-- Flatpickr JS -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

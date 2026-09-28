@@ -1,0 +1,16 @@
+{
+  "name": "countrysidebeach-booking",
+  "version": "1.0.0",
+  "description": "Booking API for Country Side Beach",
+  "main": "netlify/functions/booking.js",
+  "scripts": {
+    "dev": "netlify dev",
+    "test": "node --test netlify/functions/booking.test.js"
+  },
+  "dependencies": {
+    "resend": "^3.2.0"
+  },
+  "devDependencies": {
+    "netlify-cli": "^17.0.0"
+  }
+}
